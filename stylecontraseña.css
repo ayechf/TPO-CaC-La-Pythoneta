@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(/Proyecto\ Final\ Frontend/Image/fondoolvidarcontraseña.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Raleway", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.5;
+    overflow-x: hidden;
+}
+
+.formulario .box{
+    background-color: transparent;
+    border-color: rgb(50, 50, 50);
+    border: 1px solid rgb(79, 78, 78);
+    padding: 40px 50px;
+    border-radius: 15px;
+}
+
+.formulario .email:focus{
+    outline: none;
+}
+
+.formulario{
+    min-height: 100vh;
+    padding: 100px 80px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+h1{
+    text-align: center;
+    font-size: 30px
+}
+
+p{
+    text-align: center;
+}
+
+.mail .email{
+    display: block;
+    height: 30px;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid rgb(116, 116, 116);
+    color: rgb(0, 2, 39);
+    font-weight: inherit;
+    font-family: inherit;
+    font-size: 16px;
+}
+
+.formulario .boton{
+    height: 40px;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: inherit;
+    cursor: pointer;
+    border-radius: 25px;
+    user-select: none;
+    background: rgb(87, 165, 198);
+    border: none;
+    position: relative;
+    color: rgb(7, 8, 40);
+    overflow: hidden;
+    z-index: 1;
+}
+
+.formulario .boton::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    transition: background-color 1s ease;
+    z-index: -1;
+}
+
+.formulario .boton:hover::before{
+    background-color: rgb(209, 233, 255);
+    border-radius: 25px;
+}
