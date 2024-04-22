@@ -5,7 +5,7 @@
 }
 
 body{
-    background-image: url("/Proyecto\ Final\ Frontend/Image/fondologin.png");
+    background-image: url(/TPO-CaC-La-Pythoneta/Image/fondologin.png);
     background-repeat: no-repeat;
     background-size: cover;
     font-family: "Raleway", sans-serif;

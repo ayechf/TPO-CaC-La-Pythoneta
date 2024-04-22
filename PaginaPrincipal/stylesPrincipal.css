@@ -1,0 +1,301 @@
+header {
+    box-shadow: none;
+    height: 71px;
+    background-color: black;
+    border: black;
+    display: grid;
+    color: white;
+    overflow: hidden;
+    margin: 0;
+    width: 100%;
+  }
+  
+  html, body {
+    height: 100%;
+    overflow: hidden;
+    user-select: none;
+  }
+  .Titulo {
+    font: 300 80px/1 courier;
+    white-space: nowrap;
+    color: whitesmoke;
+  }
+  .TituloSpan {
+    display: inline-block;
+   color: skyblue;
+    animation: stretch 2.5s cubic-bezier(0.4, 1.4, 0.75, 0.9) infinite;
+    transform-origin: center;
+  }
+  
+  .TituloSpan:nth-of-type(1) {
+    animation-delay: 0.25s;
+  }
+  .TituloSpan:nth-of-type(2) {
+    animation-delay: 0.5s;
+  }
+  .TituloSpan:nth-of-type(3) {
+    animation-delay: 0.75s;
+  }
+  .TituloSpan:nth-of-type(4) {
+    animation-delay: 1s;
+  }
+  .TituloSpan:nth-of-type(5) {
+    animation-delay: 1.25s;
+  }
+  .TituloSpan:nth-of-type(6) {
+    animation-delay: 1.5s;
+  }
+  .TituloSpan:nth-of-type(7) {
+    animation-delay: 1.75s;
+  }
+  
+  .TituloSpan:nth-of-type(9) {
+    animation-delay: 2.0s;
+  }
+  .TituloSpan:nth-of-type(10) {
+    animation-delay: 2.25s;
+  }
+  .TituloSpan:nth-of-type(11) {
+    animation-delay: 2.50s;
+  }
+  .TituloSpan:nth-of-type(12) {
+    animation-delay: 2.75s;
+  }
+  .TituloSpan:nth-of-type(13) {
+    animation-delay: 3.0s;
+  }
+  .TituloSpan:nth-of-type(14) {
+    animation-delay: 3.25s;
+  }
+  
+  @keyframes stretch {
+    5% {
+      transform: scaleX(5000);
+   }
+    15% {
+      transform: scaleX(1);
+   }
+  }
+  
+  
+  .Local{
+    position: relative;
+    bottom: 21%;
+    right: 35%;
+    margin: 2px 3px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+  }
+  
+  .PaisLocal{
+    position: relative;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-size: 50px;
+    letter-spacing: 4px;
+    overflow: hidden;
+    
+    background-repeat: no-repeat;
+    background-size: 80%;
+    
+  }
+  
+  
+  .Visitante{
+    position: relative;
+    bottom: 32%;
+    left: 39%;
+    transform: translate(-21%, 35%);
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+  }
+  
+  .PaisVisitante{
+    position: relative;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-size: 50px;
+    letter-spacing: 4px;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: 80%;
+  }
+  
+  @keyframes animateVisitante {
+    0%{
+      background-position: 500%;
+    }
+    100%{
+      background-position: -500%;
+    }
+  }
+  
+  @keyframes animate {
+    0% {
+      background-position: -500%;
+    }
+    100% {
+      background-position: 500%;
+    }
+  }
+  
+  .ClassUl {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  .ClassLi {
+    float: left;
+    margin-left: 15%;
+  }
+  
+  .ClassA {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  .ClassA:hover {
+    background-color: #111;
+  }
+  footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: skyblue;
+    color: white;
+    line-height: 25px;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .ubicacion {
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  .iconos {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+  
+  .icono_item {
+    margin: 5px;
+    color: white;
+  }
+  
+  .icono_item:hover {
+    color: #fec195;
+  }
+  
+  #iframe-preview {
+    width: 250px;
+    height: 250px;
+    border: 1px solid #ccc;
+    position: fixed;
+    left: 20px;
+    bottom: 20px;
+    z-index: 1000;
+    background-color: white;
+    display: none;
+  }
+  .centerTitule {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+    color: red;
+  }
+  
+  #circle {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+        justify-content: space-around;
+    height: 710px; /* Ajusta esto según la altura que desees */
+  }
+  
+  .escudos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 10%; /* Ajusta según necesidad */
+  }
+  
+  .escudoArg,
+  .escudoVisitante {
+    height: 110px;
+    width: 120px;
+    /* Las imágenes de fondo se mantienen como las definiste */
+  
+    background-position: center; /* Centra la imagen de fondo */
+  }
+  
+  .boton-container {
+    margin-top: 20px; /* Ajusta según necesidad */
+  }
+  
+  #circle span {
+    position: fixed;
+    height: 350px;
+    width: 300px;
+    transform-origin: bottom center;
+  }
+  
+  
+  
+  .Boton{
+    width: 165px;
+    height: 62px;
+    cursor: pointer;
+    color:yellow;
+    font-size: 17px;
+    border-radius: 1rem;
+    border: none;
+    position: relative;
+    background: #100720;
+    transition: 0.1s;
+     }
+     .Boton::after{
+        content: "";
+        width: 100%;
+        height: 100%;
+        background-image: radial-gradient(circle
+        farthest-corner at 10% 20%, rgb(76, 219, 255)17.8%,
+        white);
+        filter: blur(15px);
+        z-index: -1;
+        position: absolute;
+        left:0;
+        top:0;
+     }
+     
+     .Boton:active{
+        transform: scale(0.9)rotate(3deg);
+        background-image: radial-gradient(circle
+        farthest-corner at 10% 20%, rgb(76, 219, 255)17.8%,
+        white);
+        transition: 0.5s;
+  
+     }
