@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="stylelogin.css">
+    <link rel="stylesheet" href="/Proyecto Final Frontend/CSS/stylelogin.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
@@ -14,17 +14,17 @@
         <div class="contenido">
             <div class="box">
                 <div>
-                    <img src="/TPO-CaC-La-Pythoneta/Image/logoiniciosesion.png" alt="" class="logo">
+                    <img src="/Proyecto Final Frontend/Image/logoiniciosesion.png" alt="" class="logo">
                 </div>
                 <br>
                 <h1>Inicia sesión</h1>
                 <br>
-                <form action="">
+                <form action="" id="validar">
                     <div class="usuario">
-                        <input type="text" required class="control">
+                        <input type="text" placeholder="Usuario" class="control" id="usuario">
                     </div>
                     <div class="contraseña">
-                        <input type="password" required class="control">
+                        <input type="password" placeholder="Contraseña" class="control" id="contraseña">
                         <div class="link">
                             <a href="olvidarcontraseña.html" class="recordar">¿Olvidaste tu contraseña?</a>
                         </div>
@@ -35,5 +35,7 @@
             </div>
         </div>
     </section>
+
+    <script src="/TPO-CaC-La-Pythoneta/Login/JS/app.js"></script>
 </body>
 </html>
