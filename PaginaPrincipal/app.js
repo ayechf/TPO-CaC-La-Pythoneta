@@ -25,3 +25,10 @@
       previewContainer.innerHTML = ""; // Limpia el contenedor
     });
   });
+
+
+  document.querySelectorAll('.mobile-nav .ClassA').forEach(item => {
+    item.addEventListener('click', function() {
+      document.getElementById('menu-toggle').checked = false;
+    });
+  });

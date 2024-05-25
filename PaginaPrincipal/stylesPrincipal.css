@@ -16,8 +16,44 @@ header {
     user-select: none;
   }
 
+  .divHeader{
+    height: 100% !important;
+  }
 
-/* Ocultar el botón del menú en pantallas grandes */
+  .OtroEscudoImg{
+    width: 65px; 
+    height: 72px
+  }
+.iconoHeader{
+  height: 70%; 
+  width: 100%
+}
+.HeaderBoton{
+  text-align: right;
+  margin-right: 30px;
+  margin-top: 20px;
+}
+.HeaderInfo{
+  height: 100% !important; 
+  display: inline-block !important;
+}
+.InfoHeader{
+  color: white;
+  padding-top: 6px;
+  padding-left: 18px;
+  margin-top: 12px;
+}
+.LetraHeader{
+  font-family: Rubik Vinyl, system-ui
+}
+
+
+/*NAV*/
+.nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 /* Ocultar el botón del menú en pantallas grandes */
 .nav-toggle {
   display: none;

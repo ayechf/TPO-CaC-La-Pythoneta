@@ -27,62 +27,46 @@
     <header style="margin-bottom: auto">
       <div class="header-logo-wrapper">
         <div
-          class="justify-content-between d-flex"
-          style="height: 100% !important"
+          class="justify-content-between d-flex divHeader"
+          
         >
           <div
-            class="justify-content-left align-items-center d-flex"
-            style="height: 100% !important"
+            class="justify-content-left align-items-center d-flex divHeader"
           >
             <div
-              class="d-inline-block header-logo"
-              style="height: 100% !important"
+              class="d-inline-block header-logo divHeader"
             >
               <a
-                class="d-flex flex-column justify-content-center"
-                style="height: 100% !important"
+                class="d-flex flex-column justify-content-center divHeader"
               >
                 <img
-                  style="width: 65px; height: 72px"
+                  class="OtroEscudoImg"
                   src="Imagenes/OtroEscudo.jpg"
                 />
               </a>
             </div>
 
-            <div
-              style="height: 100% !important; display: inline-block !important"
-            >
-
-              <div
-                style="
-
-                  color: white;
-                  padding-top: 6px;
-                  padding-left: 18px;
-                  margin-top: 12px;
-                "
-              >
-                <span style="font-family: Rubik Vinyl, system-ui"> ASOCIACION DEL FUTBOL ARGENTINO </span>
-                <span style="font-family: Rubik Vinyl, system-ui"> | SEDE DIGITAL</span>
+            <div class="HeaderInfo">
+              <div class="InfoHeader">
+                <span class="LetraHeader"> ASOCIACION DEL FUTBOL ARGENTINO </span>
+                <span class="LetraHeader"> | SEDE DIGITAL</span>
               </div>
             </div>
           </div>
-          <div style="text-align: right; margin-right: 30px; margin-top: 20px">
-            <button onclick="window.location='../login.html'">
+          <div class="HeaderBoton">
+            <button onclick="window.location='/Login/login.html'" class="iconoHeader">
               <i
-                class="fa-solid fa-right-from-bracket"
-                style="height: 100%; width: 100%"
+                class="fa-solid fa-right-from-bracket"                
               ></i>
             </button>
-            <input type="checkbox" id="menu-toggle" class="menu-toggle" />
-            <label for="menu-toggle" class="menu-toggle-icon">
-              <i class="fa-solid fa-bars"></i>
-            </label>
           </div>
         </div>
       </div>
     </header>
-
+    <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+    <label for="menu-toggle" class="menu-toggle-icon">
+      <i class="fa-solid fa-bars"></i>
+    </label>
     <nav class="menu">
       <!-- Navegador Escritorio -->
       <ul class="ClassUl desktop-nav">
