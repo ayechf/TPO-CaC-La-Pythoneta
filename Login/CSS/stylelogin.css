@@ -1,3 +1,4 @@
+/*General*/
 *{
     margin: 0;
     padding: 0;
@@ -14,6 +15,34 @@ body{
     line-height: 1.5;
     overflow-x: hidden;
 }
+
+/*Menu*/
+.ClassUl {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+.ClassLi {
+    float: left;
+    margin-left: 15%;
+}
+
+.ClassA {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.ClassA:hover {
+    background-color: #111;
+}
+
+/*Formulario*/
 
 .contenido .box{
     background-color: rgb(41, 41, 41);
@@ -144,4 +173,39 @@ a{
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
+}
+
+/*Footer*/
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: skyblue;
+    color: white;
+    line-height: 25px;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ubicacion {
+    display: flex;
+    align-items: flex-start;
+}
+
+.iconos {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.icono_item {
+    margin: 5px;
+    color: white;
+}
+
+.icono_item:hover {
+    color: #fec195;
 }

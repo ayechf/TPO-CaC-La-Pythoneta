@@ -1,3 +1,5 @@
+/*General*/
+
 *{
     margin: 0;
     padding: 0;
@@ -15,6 +17,42 @@ body{
     overflow-x: hidden;
 }
 
+/*Nav*/
+nav.nav-toggle {
+display: none;
+background: none;
+border: none;
+}
+
+/*Menu*/
+
+.ClassUl {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+.ClassLi {
+    float: left;
+    margin-left: 15%;
+}
+
+.ClassA {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+
+.ClassA:hover {
+    background-color: #111;
+}
+
+/*Formulario*/
 .formulario .box{
     background-color: transparent;
     border-color: rgb(50, 50, 50);
@@ -88,4 +126,39 @@ p{
 .formulario .boton:hover::before{
     background-color: rgb(209, 233, 255);
     border-radius: 25px;
+}
+
+/*Footer*/
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: skyblue;
+    color: white;
+    line-height: 25px;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ubicacion {
+    display: flex;
+    align-items: flex-start;
+}
+
+.iconos {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.icono_item {
+    margin: 5px;
+    color: white;
+}
+
+.icono_item:hover {
+    color: #fec195;
 }
