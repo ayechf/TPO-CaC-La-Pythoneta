@@ -129,7 +129,10 @@ header {
   }
   .menu-toggle-icon {
     display: block;
+    position: absolute;
+    z-index: 1000;
   }
+
 }
 
 

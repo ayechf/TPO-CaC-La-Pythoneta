@@ -27,6 +27,25 @@
   });
 
 
+    // Mostrar u ocultar el título y las imágenes al hacer clic en el menú
+    document.getElementById('menu-toggle').addEventListener('change', function() {
+      var title = document.getElementById('main-title');
+      var images = document.getElementById('main-images');
+      var local = document.getElementById('nombresPaisesLocal')
+      var visitante = document.getElementById('nombresPaisesVisitante')
+      if (this.checked) {
+        title.style.display = 'none';
+        images.style.display = 'none';
+        local.style.display = 'none'
+        visitante.style.display = 'none'
+      } else {
+        title.style.display = 'block';
+        images.style.display = 'flex';
+        visitante.style.display = 'flex'
+        local.style.display = 'flex'
+      }
+    });
+
   document.querySelectorAll('.mobile-nav .ClassA').forEach(item => {
     item.addEventListener('click', function() {
       document.getElementById('menu-toggle').checked = false;

@@ -63,10 +63,7 @@
         </div>
       </div>
     </header>
-    <input type="checkbox" id="menu-toggle" class="menu-toggle" />
-    <label for="menu-toggle" class="menu-toggle-icon">
-      <i class="fa-solid fa-bars"></i>
-    </label>
+    
     <nav class="menu">
       <!-- Navegador Escritorio -->
       <ul class="ClassUl desktop-nav">
@@ -77,7 +74,10 @@
         </li>
         <li class="ClassLi"><span class="ClassA">About</span></li>
       </ul>
-
+      <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+      <label for="menu-toggle" class="menu-toggle-icon">
+        <i class="fa-solid fa-bars"></i>
+      </label>
       <!-- Menú desplegable móvil -->
       <ul class="ClassUl mobile-nav">
         <li class="ClassLi"><span class="ClassA">Home</span></li>
@@ -90,7 +90,7 @@
     </nav>
 
     <main class="container">
-      <h1 class="Titulo">
+      <h1 class="Titulo" id="main-title">
         <span class="TituloSpan">P</span><span class="TituloSpan">R</span
         ><span class="TituloSpan">O</span><span class="TituloSpan">X</span
         ><span class="TituloSpan">I</span><span class="TituloSpan">M</span
@@ -100,7 +100,7 @@
         ><span class="TituloSpan">I</span><span class="TituloSpan">D</span
         ><span class="TituloSpan">O</span>
       </h1>
-      <div class="escudos">
+      <div class="escudos" id="main-images">
         <img
           src="Imagenes/EscudoArg.jpg"
           alt="Escudo de Argentina"
@@ -114,7 +114,7 @@
         />
       </div>
 
-      <div class="Local">
+      <div class="Local" id="nombresPaisesLocal">
         <span class="PaisLocal">
           <br />
           <br />
@@ -123,7 +123,7 @@
           Argentina
         </span>
       </div>
-      <div class="Visitante">
+      <div class="Visitante" id="nombresPaisesVisitante">
         <span class="PaisVisitante"> Brasil </span>
       </div>
       <button class="Boton">Comprar Entrada</button>
