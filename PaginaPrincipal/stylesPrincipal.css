@@ -15,6 +15,127 @@ header {
     overflow: hidden;
     user-select: none;
   }
+
+  .divHeader{
+    height: 100% !important;
+  }
+
+  .OtroEscudoImg{
+    width: 65px; 
+    height: 72px
+  }
+.iconoHeader{
+  height: 70%; 
+  width: 100%
+}
+.HeaderBoton{
+  text-align: right;
+  margin-right: 30px;
+  margin-top: 20px;
+}
+.HeaderInfo{
+  height: 100% !important; 
+  display: inline-block !important;
+}
+.InfoHeader{
+  color: white;
+  padding-top: 6px;
+  padding-left: 18px;
+  margin-top: 12px;
+}
+.LetraHeader{
+  font-family: Rubik Vinyl, system-ui
+}
+
+
+/*NAV*/
+.nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* Ocultar el botón del menú en pantallas grandes */
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+}
+
+/* Estilos para la lista del menú en pantallas grandes */
+.ClassUl {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Estilos para los elementos del menú en pantallas grandes */
+.ClassLi {
+  float: left;
+  margin-left: 15%;
+}
+
+/* Estilos para los enlaces del menú en pantallas grandes */
+.ClassA {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Cambiar el color del enlace al pasar el cursor */
+.ClassA:hover {
+  background-color: #111;
+}
+
+/* Estilos para el icono de menú en pantallas pequeñas */
+.menu-toggle {
+  display: none;
+}
+
+.menu-toggle-icon {
+  display: none;
+  cursor: pointer;
+  color: blue;
+  font-size: 30px;
+}
+
+/* Estilos para el menú móvil */
+.mobile-nav {
+  display: none;
+  flex-direction: column;
+  background-color: #333;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 60px;
+}
+
+.mobile-nav li {
+  padding: 10px;
+}
+
+/* Mostrar el menú móvil cuando el checkbox está marcado */
+.menu-toggle:checked ~ .mobile-nav {
+  display: flex;
+}
+
+/* Media queries para pantallas pequeñas */
+@media (max-width: 800px) {
+  .desktop-nav {
+    display: none;
+  }
+  .menu-toggle-icon {
+    display: block;
+    position: absolute;
+    z-index: 1000;
+  }
+
+}
+
+
   .Titulo {
     font: 300 80px/1 courier;
     white-space: nowrap;
@@ -127,93 +248,10 @@ header {
     background-size: 80%;
   }
   
-  @keyframes animateVisitante {
-    0%{
-      background-position: 500%;
-    }
-    100%{
-      background-position: -500%;
-    }
-  }
+
   
-  @keyframes animate {
-    0% {
-      background-position: -500%;
-    }
-    100% {
-      background-position: 500%;
-    }
-  }
-  
-  .ClassUl {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-  }
-  
-  .ClassLi {
-    float: left;
-    margin-left: 15%;
-  }
-  
-  .ClassA {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  /* Change the link color to #111 (black) on hover */
-  .ClassA:hover {
-    background-color: #111;
-  }
-  footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: skyblue;
-    color: white;
-    line-height: 25px;
-    z-index: 1000;
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .ubicacion {
-    display: flex;
-    align-items: flex-start;
-  }
-  
-  .iconos {
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-  }
-  
-  .icono_item {
-    margin: 5px;
-    color: white;
-  }
-  
-  .icono_item:hover {
-    color: #fec195;
-  }
-  
-  #iframe-preview {
-    width: 250px;
-    height: 250px;
-    border: 1px solid #ccc;
-    position: fixed;
-    left: 20px;
-    bottom: 20px;
-    z-index: 1000;
-    background-color: white;
-    display: none;
-  }
+
+
   .centerTitule {
     display: flex;
     justify-content: center;
@@ -264,38 +302,145 @@ header {
   }
   
   
+.Boton{
+  width: 165px;
+  height: 62px;
+  cursor: pointer;
+  color:yellow;
+  font-size: 17px;
+  border-radius: 1rem;
+  border: none;
+  position: relative;
+  background: #100720;
+  transition: 0.1s;
+   }
+   .Boton::after{
+      content: "";
+      width: 100%;
+      height: 100%;
+      background-image: radial-gradient(circle
+      farthest-corner at 10% 20%, rgb(76, 219, 255)17.8%,
+      white);
+      filter: blur(15px);
+      z-index: -1;
+      position: absolute;
+      left:0;
+      top:0;
+   }
+   
+   .Boton:active{
+      transform: scale(0.9)rotate(3deg);
+      background-image: radial-gradient(circle
+      farthest-corner at 10% 20%, rgb(76, 219, 255)17.8%,
+      white);
+      transition: 0.5s;
+
+   }
+
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: skyblue;
+  color: white;
+  line-height: 25px;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+}
+
+.ubicacion {
+  display: flex;
+  align-items: flex-start;
+}
+
+.iconos {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.icono_item {
+  margin: 5px;
+  color: white;
+}
+
+.icono_item:hover {
+  color: #fec195;
+}
+
+#iframe-preview {
+  width: 250px;
+  height: 250px;
+  border: 1px solid #ccc;
+  position: fixed;
+  left: 20px;
+  bottom: 20px;
+  z-index: 1000;
+  background-color: white;
+  display: none;
+}
+
+
+
+@media (max-width: 800px) {
+  .Titulo {
+    font: 300 70px/1 courier;
+    font-family: "Bebas Neue", sans-serif;
+  }
+
+  .escudoArg,
+  .escudoVisitante {
+    margin-top: 50px;
+    height: 100px;
+    width: 100px;
+    /* Las imágenes de fondo se mantienen como las definiste */
   
-  .Boton{
-    width: 165px;
-    height: 62px;
-    cursor: pointer;
-    color:yellow;
-    font-size: 17px;
-    border-radius: 1rem;
-    border: none;
+    background-position: center; /* Centra la imagen de fondo */
+  }
+
+  .Visitante {
     position: relative;
-    background: #100720;
-    transition: 0.1s;
-     }
-     .Boton::after{
-        content: "";
-        width: 100%;
-        height: 100%;
-        background-image: radial-gradient(circle
-        farthest-corner at 10% 20%, rgb(76, 219, 255)17.8%,
-        white);
-        filter: blur(15px);
-        z-index: -1;
-        position: absolute;
-        left:0;
-        top:0;
-     }
-     
-     .Boton:active{
-        transform: scale(0.9)rotate(3deg);
-        background-image: radial-gradient(circle
-        farthest-corner at 10% 20%, rgb(76, 219, 255)17.8%,
-        white);
-        transition: 0.5s;
-  
-     }
+
+    transform: translate(-21%, 35%);
+    padding: 0;
+    
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+  }
+
+  .Local{
+    position: relative;
+    margin: 2px 3px;
+    transform: translate(9%, 30%);
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+  }
+}
+
+
+
+
+
+@keyframes animateVisitante {
+  0%{
+    background-position: 500%;
+  }
+  100%{
+    background-position: -500%;
+  }
+}
+
+@keyframes animate {
+  0% {
+    background-position: -500%;
+  }
+  100% {
+    background-position: 500%;
+  }
+}

@@ -15,61 +15,82 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik+Vinyl&display=swap"
+      rel="stylesheet"
+    />
     <title>Compra de Entradas</title>
   </head>
   <body>
     <header style="margin-bottom: auto">
       <div class="header-logo-wrapper">
         <div
-          class="justify-content-between d-flex"
-          style="height: 100% !important"
+          class="justify-content-between d-flex divHeader"
+          
         >
           <div
-            class="justify-content-left align-items-center d-flex"
-            style="height: 100% !important"
+            class="justify-content-left align-items-center d-flex divHeader"
           >
-            <div class="d-inline-block header-logo" style="height: 100% !important">
+            <div
+              class="d-inline-block header-logo divHeader"
+            >
               <a
-                class="d-flex flex-column justify-content-center"
-                style="height: 100% !important"
+                class="d-flex flex-column justify-content-center divHeader"
               >
                 <img
-                  style="width: 65px; height: 72px"
+                  class="OtroEscudoImg"
                   src="Imagenes/OtroEscudo.jpg"
                 />
               </a>
             </div>
 
-            <div
-              style="height: 100% !important; display: inline-block !important"
-            >
-              <div style="color: white; padding-top: 6px; padding-left: 18px; margin-top: 12px;">
-                <span> ASOCIACIÓN DE FÚTBOL ARGENTINO </span>
-                <span> | SEDE DIGITAL</span>
+            <div class="HeaderInfo">
+              <div class="InfoHeader">
+                <span class="LetraHeader"> ASOCIACION DEL FUTBOL ARGENTINO </span>
+                <span class="LetraHeader"> | SEDE DIGITAL</span>
               </div>
             </div>
           </div>
-          <div style="text-align: right; margin-right: 30px; margin-top: 20px;">
-
-            <i class="fa-solid fa-right-from-bracket " style="height: 100%; width: 100%;"></i>
-            
+          <div class="HeaderBoton">
+            <button onclick="window.location='/Login/login.html'" class="iconoHeader">
+              <i
+                class="fa-solid fa-right-from-bracket"                
+              ></i>
+            </button>
           </div>
         </div>
       </div>
     </header>
+    
     <nav class="menu">
-      <ul class="ClassUl">
-        <li class="ClassLi"><a class="ClassA" href="default.asp">Home</a></li>
-        <li class="ClassLi"><a class="ClassA" href="news.asp">Market</a></li>
+      <!-- Navegador Escritorio -->
+      <ul class="ClassUl desktop-nav">
+        <li class="ClassLi"><span class="ClassA">Home</span></li>
+        <li class="ClassLi"><span class="ClassA">Market</span></li>
         <li class="ClassLi">
-          <a class="ClassA" href="contact.asp">Contact</a>
+          <span class="ClassA">Contact</span>
         </li>
-        <li class="ClassLi"><a class="ClassA" href="about.asp">About</a></li>
+        <li class="ClassLi"><span class="ClassA">About</span></li>
+      </ul>
+      <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+      <label for="menu-toggle" class="menu-toggle-icon">
+        <i class="fa-solid fa-bars"></i>
+      </label>
+      <!-- Menú desplegable móvil -->
+      <ul class="ClassUl mobile-nav">
+        <li class="ClassLi"><span class="ClassA">Home</span></li>
+        <li class="ClassLi"><span class="ClassA">Market</span></li>
+        <li class="ClassLi">
+          <span class="ClassA">Contact</span>
+        </li>
+        <li class="ClassLi"><span class="ClassA">About</span></li>
       </ul>
     </nav>
 
     <main class="container">
-      <h1 class="Titulo">
+      <h1 class="Titulo" id="main-title">
         <span class="TituloSpan">P</span><span class="TituloSpan">R</span
         ><span class="TituloSpan">O</span><span class="TituloSpan">X</span
         ><span class="TituloSpan">I</span><span class="TituloSpan">M</span
@@ -79,7 +100,7 @@
         ><span class="TituloSpan">I</span><span class="TituloSpan">D</span
         ><span class="TituloSpan">O</span>
       </h1>
-      <div class="escudos">
+      <div class="escudos" id="main-images">
         <img
           src="Imagenes/EscudoArg.jpg"
           alt="Escudo de Argentina"
@@ -93,19 +114,17 @@
         />
       </div>
 
-      <div class="Local">
+      <div class="Local" id="nombresPaisesLocal">
         <span class="PaisLocal">
-          <br>
-          <br>
-          <br>
+          <br />
+          <br />
+          <br />
 
           Argentina
         </span>
       </div>
-      <div class="Visitante">
-        <span class="PaisVisitante">
-          Brasil
-        </span>
+      <div class="Visitante" id="nombresPaisesVisitante">
+        <span class="PaisVisitante"> Brasil </span>
       </div>
       <button class="Boton">Comprar Entrada</button>
     </main>
@@ -113,7 +132,7 @@
     <footer>
       <div class="ubicacion">
         <span>
-          Sede Social . Ciudad Autonoma de Buenos Aires:
+          Sede Social. Asociacion del Futbol Argentino.
           <br />
           <a
             class="preview-link"
@@ -155,41 +174,4 @@
     </footer>
   </body>
 </html>
-<script>
-  (function () {
-    var $body = document.body,
-      $menu_trigger = $body.getElementsByClassName("menu-trigger")[0];
-
-    if (typeof $menu_trigger !== "undefined") {
-      $menu_trigger.addEventListener("click", function () {
-        $body.className = $body.className == "menu-active" ? "" : "menu-active";
-      });
-    }
-  }).call(this);
-
-  //Codigo para que se vea el iframe
-  document.addEventListener("DOMContentLoaded", function () {
-    var link = document.querySelector(".preview-link");
-    var previewContainer = document.getElementById("iframe-preview");
-
-    link.addEventListener("mouseover", function () {
-      var url = this.getAttribute("data-url");
-      previewContainer.innerHTML = ""; // Limpia el contenedor
-      var iframe = document.createElement("iframe");
-      iframe.setAttribute("src", url);
-      iframe.style.width = "100%"; // Ajustamos el ancho al 100% del contenedor
-      iframe.style.height = "100%"; // Ajustamos la altura al 100% del contenedor
-      iframe.style.border = "0";
-      iframe.setAttribute("allowfullscreen", "");
-      iframe.setAttribute("loading", "lazy");
-      iframe.setAttribute("referrerpolicy", "no-referrer-when-downgrade");
-      previewContainer.appendChild(iframe);
-      previewContainer.style.display = "block"; // Muestra el contenedor
-    });
-
-    link.addEventListener("mouseout", function () {
-      previewContainer.style.display = "none"; // Oculta el contenedor
-      previewContainer.innerHTML = ""; // Limpia el contenedor
-    });
-  });
-</script>
+<script src="app.js"></script>
