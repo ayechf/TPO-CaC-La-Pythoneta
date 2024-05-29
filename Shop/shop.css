@@ -32,33 +32,46 @@ body {
 }
 
 
-.navbar {
+.nav{
     display: flex;
-    height: auto;
-    background-color: #0a83a1c0;
-    height: 100px;
+    justify-content: space-between;
     align-items: center;
-}
-
-/* Estilo para el DIV donde se encuentra en navbar */
-.navbar a {
+  }
+  /* Ocultar el botón del menú en pantallas grandes */
+  .nav-toggle {
+    display: none;
+    background: none;
+    border: none;
+  }
+  
+  /* Estilos para la lista del menú en pantallas grandes */
+  .ClassUl {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  /* Estilos para los elementos del menú en pantallas grandes */
+  .ClassLi {
+    float: left;
+    margin-left: 15%;
+  }
+  
+  /* Estilos para los enlaces del menú en pantallas grandes */
+  .ClassA {
+    display: block;
     color: white;
-    font-size: large;
-    padding: 50px 20px 50px 20px;
+    text-align: center;
+    padding: 14px 16px;
     text-decoration: none;
-    text-align-last: 20px;
-    font-weight: bold    
-       
-    }
-    
+  }
 
-
-/* Estilo para que al pasar sobre alguno de los items de navbar cambie de color tanto la letra como el fondo */
-.navbar a:hover {
-    background-color: #bb9f00;
-    color: black;
-}
-
+  .ClassA:hover {
+    background-color: #111;
+  }
+  
 
 /*Estilo donde se encuentra 1. Quieres vestir como un campeon 2. Slider 3.Realiza tu compra*/
 
